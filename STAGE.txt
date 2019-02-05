@@ -1,0 +1,40 @@
+This set of files contains several documents:
+
+A directory WEBSERVERSD12
+
+A file WEBSERVER12.ino. 
+This is an Arduino file.
+It sits in the directory WEBSERVERSD12
+It is a slightly modified testprogram for checking out Ethernet and SD
+This is designed for an Arduino Uno or Mega equipped with a Ethernet/SD shield
+The file calls up a html file called STAGE.html
+The purpose is to check the UIF functionality when loaded from Arduino\
+When pointed to the IP address of the Arduino on which this program is loaded
+the UIF should show up.
+When the 4th button is pressed, the LED13 should go on for a second
+
+
+
+A file STAGE.htm
+This must be present on the SD card
+This is a renamed copy of the 'current' Stage_4_3 *.htm file
+As the SD only can handle 8.3 type files, the original .html file name needs to be shortened
+Currently it is a copy of the file Stage_4_3_RLV18Editra.htm.
+which is a reworked version of stage_4_3.htm made by GW  
+Notably it calles jquery-3.2.1.js which needs to sit on the SD
+
+
+jquery-3.2.1.js
+The jquery library file which should reside on the SD.
+When the buttons in the UIF donot have the normally 
+expacted spacing or color, try to load this file from internet
+
+Test2.php
+A test file to be placed  in a non arduino environment into the same directory as STAGE.htm
+
+
+Stage_4_3_RLV18Editra.htm
+The stage file as modified by RL to compress the code a little as test
+
+STAGE.txt
+This readme file 
